@@ -1,0 +1,76 @@
+/* Reset your CSS */
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: blueviolet;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Centrando tu div */
+.container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 500px;
+  height: 200px;
+  background-color: black;
+  border-radius: 10px;
+}
+
+/* Tu reto es lograr crear la imagen que viene adjunta, sólo con CSS */
+/* Tu código aquí */
+
+/* Al conetenedor le damos un margen arriba para separar y un display flex para alinear de manera orizontal los objetos */
+.container__divs {
+  display: flex;
+  margin: 70px 5px 5px 5px;
+  width: 490px;
+  height: 120px;
+}
+
+/* luego le damos tamaño y color a cada contendor hijo y un pequeño margen a los lados para hacer la separacion entre teclas */
+.container__divs--child {
+  position: relative;
+  background-color: aliceblue;
+  margin: 0 2px;
+  width: 100px;
+  height: 120px;
+}
+
+.container__divs--child > div {
+  position: absolute;
+  background-color: black;
+  right: 35px;
+  width: 25px;
+  height: 50px;
+}
